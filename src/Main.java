@@ -1,6 +1,7 @@
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
 public class Main extends Application{
@@ -15,6 +16,14 @@ public class Main extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		primaryStage.setTitle("Circle");  //TODO
 
+		
+		Circle cir = new Circle(WORLD_WIDTH/50);
+		
+		cir.setTranslateX(WORLD_WIDTH/2 - WORLD_WIDTH/50/2);
+		cir.setTranslateY(WORLD_HIGHT/2 - WORLD_HIGHT/50/2);
+		
+		
+		root.getChildren().add(cir);
 
 
 
