@@ -2,9 +2,12 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
 public class Player extends Circle{
+	
+	public static double radius;
 
 	Player(double radius){
 		
+		this.radius = radius;
 		
 		this.setRadius(radius);
 		
