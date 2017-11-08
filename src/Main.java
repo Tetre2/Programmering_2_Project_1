@@ -1,6 +1,7 @@
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCode;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
@@ -21,6 +22,49 @@ public class Main extends Application{
 		
 		cir.setTranslateX(WORLD_WIDTH/2 - WORLD_WIDTH/50/2);
 		cir.setTranslateY(WORLD_HIGHT/2 - WORLD_HIGHT/50/2);
+		
+		scene.setOnKeyPressed(event->{
+			
+			if(event.getCode() == KeyCode.W){
+
+				cir.setTranslateY(cir.getTranslateY() - 5);
+				
+				
+			}
+			
+			if(event.getCode() == KeyCode.S){
+
+				cir.setTranslateY(cir.getTranslateY() + 5);
+				
+				
+			}
+			
+			if(event.getCode() == KeyCode.A){
+
+				cir.setTranslateX(cir.getTranslateX() - 5);
+				
+				
+			}
+			
+			if(event.getCode() == KeyCode.D){
+
+				cir.setTranslateX(cir.getTranslateX() + 5);
+				
+				
+			}
+			
+			
+			
+			
+			
+			
+		});
+		
+		
+		
+		
+		
+		
 		
 		
 		root.getChildren().add(cir);
