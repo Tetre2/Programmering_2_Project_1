@@ -13,7 +13,7 @@ public class Main extends Application{
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		primaryStage.setTitle("TEMPLET");  //TODO
+		primaryStage.setTitle("Circle");  //TODO
 
 
 
