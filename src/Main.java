@@ -18,7 +18,7 @@ public class Main extends Application{
 		primaryStage.setTitle("Circle");  //TODO
 
 		
-		Circle cir = new Circle(WORLD_WIDTH/50);
+		Player cir = new Player(WORLD_WIDTH/50);
 		
 		cir.setTranslateX(WORLD_WIDTH/2 - WORLD_WIDTH/50/2);
 		cir.setTranslateY(WORLD_HIGHT/2 - WORLD_HIGHT/50/2);
